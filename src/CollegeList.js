@@ -21,7 +21,8 @@ const CollegeList = () => {
   const filterClg = colleges.filter(college => college.college_name.toLowerCase().includes(searchTerm.toLowerCase()))
   return (
     <div className='main-container'>
-      <h1>Top Rated Colleges Globally</h1>
+      <h1>Top Rated Colleges in India</h1>
+
       <input
         type="text"
         placeholder="Search Colleges"
@@ -30,10 +31,10 @@ const CollegeList = () => {
         onChange={e => setSearchTerm(e.target.value)}
       />
 
-      <ul className='ulist'>
           <div className='college'>
+      <div className='ulist'>
         {filterClg.map(college => (
-          <li className='item' key={college.id}>
+          <div className='item' key={college.id}>
             <h2>{college.college_name}</h2>
             <p>Employees: {college.employees}</p>
             <h3>Courses:</h3>
@@ -44,10 +45,11 @@ const CollegeList = () => {
                 </li>
               ))}
             </ul>
-          </li>
+             <a href={college.link}><button className='explore-btn'> explore </button></a>
+          </div>
         ))}
+      </div>
             </div>
-      </ul>
       </div>
  
   );

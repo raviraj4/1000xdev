@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #EEEEEE;
+  background-color: #131313;
 }
 
 code {
@@ -19,13 +19,14 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-items: center;
   /* margin: 20px; */
 }
 h1{
   color: rgb(237, 237, 237);
-  background-color: #134B70;
+  /* background-color: #2a2a2a; */
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   
 }
 .search-bar{
@@ -41,23 +42,42 @@ ul{
 }
 .college{
   width: 400px;
+  width: 80%;
 }
 .ulist{
-
+  margin-top: 20px;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; */
+  /* align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.explore-btn{
+  background-color: #2f2b87;
+  color: white;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.explore-btn:hover{
+  background-color: #26236b;
+  cursor: pointer;
 }
 .item{
-  background-color: #508C9B;
+  background-color: #222222;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
 }
 .ulist-2{
-  background-color: #134B70;
+  background-color: #343434;
   border-radius: 10px;
   padding: 10px;
-  
 }
-.item-2{
-  
+.item-2{  
   margin: 1px 20px;
 }
+
